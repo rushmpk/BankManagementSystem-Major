@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Animate the form when the page loads
+  $("#div").css({opacity: 0, top: "-50px", position: "relative"})
+           .animate({
+             opacity: 1,
+             top: "0px"
+           }, 1000); // 1000ms = 1 second
+});
+</script>
+    <title>Sign Up page for bank website</title>
+    <style>
+        /* style.css */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/pexels-pixabay-259165.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y:hidden; 
+}
+
+form {
+    /* background-color: ; */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 250px;
+    padding: 10px;
+    background-color:#fed330;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+button:hover {
+    background-color: #273c75;
+    color: white;
+}
+a{
+    color: #f2f2f2;
+}
+#adminlogin{
+
+    background-color:#273c75 ;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+   margin-left: 85px;
+}
+#adminlogin:hover{
+    background-color: #fed330;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    
+    <form action="signupbank.php" method="POST" id="div">
+        <h2>Create Account</h2>
+        <label>Username:</label>
+        <input type="text" name="username" required minlength="6"><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required minlength="6"><br><br>
+        <button type="submit">Sign Up</button>
+        <br>
+        <p>Already have Account <a href="loginbanklogin.html">click here</a></p>
+        <a href="adminlogin.php"id="adminlogin">Admin Login</a>
+    </form>
+    
+        
+
+</body>
+</html>

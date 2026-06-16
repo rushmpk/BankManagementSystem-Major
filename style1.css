@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: red;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  float: right;
+}
+#love{
+    text-align:center;
+    color:red;
+    font-size: 15px;
+}
+.home-page{
+  float: right;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+
+}
+.lo{
+  text-align: none;
+  color: orange;
+}
+.ho{
+  color: black;
+}
+
+.logo {
+  height: 40px;
+}
+li a{
+   display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color:black;
+  color: white;
+}
+.ove{
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(to right,white,red);
+  text-shadow: 0 0 5px #fff;
+  transition: transform 0.2s;
+}
+.ove:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff00cc;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.im{
+  float: right;
+}
+#ve{
+  text-align: left;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-shadow: 0 0 5px #fff;
+  background:linear-gradient(to left,red,white) ;
+  transition: transform 0.3s;
+}
+#ve:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff00cc;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 4s;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  object-fit:cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+.fa-facebook{
+  color: blue;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3px 3px 3px 3px;
+  font-size: 50px;
+}
+.fa-instagram{
+  color: red;
+  background-color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  padding: 3px 3px 3px 3px;
+
+}
+.fa-x-twitter{
+  color: black;
+  background-color: white;
+  font-size: 50px;
+  border-radius: 8px;
+  padding: 3px 3px 3px;
+  
+}
+.faaw{
+  margin-left: 15px;
+}
+.save{
+  margin: 15px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ser{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

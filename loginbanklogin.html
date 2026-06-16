@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Animate the form when the page loads
+  $("#div").css({opacity: 0, bottom: "-50px", position: "relative"})
+           .animate({
+             opacity: 1,
+             top: "0px"
+           }, 2000); // 1000ms = 1 second
+});
+</script>
+  <meta charset="UTF-8">
+  <title>Login to Access Bank Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('img/pexels-pixabay-259027.jpg');
+      background-size: cover;
+      overflow-y: hidden;
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      color: #ccc;
+    }
+    a{
+      color: #ccc;
+    }
+    .container {
+      
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 350px;
+      backdrop-filter: blur(3px);
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 200px;
+      padding: 10px;
+      background-color:#fed330;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 60px;
+    }
+    button:hover {
+      background-color:  #273c75;
+      color: white;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+   <form action="loginbank.php" method="POST" id="div">
+  <div class="container" id="loginBox">
+    
+    <h2>LOGIN</h2>
+    <div id="loginError" class="error"></div>
+   
+    <input type="text" placeholder="Username"name="username" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <br>
+    <br>
+    <button type="submit">Login</button>
+    <br>
+    <br>
+    <p>If You Have No Account  <a href="signupbanksignup.html">click here</a></p>
+    </form>
+  </div>
+
+  
+</body>
+</html>

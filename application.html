@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Account Creation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      background-image: url('img/loan.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Open a Bank Account</h2>
+    <form action="appli.php" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label for="gender">Gender</label>
+      <select name="gender" required>
+        <option value="">--Select--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="address">Address</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label for="idproof">ID Proof Type</label>
+      <select name="idproof" required>
+        <option value="">--Select--</option>
+        <option value="Aadhar">Aadhar</option>
+        <option value="PAN">PAN</option>
+        <option value="Passport">Passport</option>
+      </select>
+
+      <label for="idnumber">ID Number</label>
+      <input type="text" name="idnumber" required>
+
+      <label for="accounttype">Account Type</label>
+      <select name="accounttype" required>
+        <option value="">--Select--</option>
+        <option value="Savings">Savings</option>
+        <option value="Current">Current</option>
+        <option value="Fixed Deposit">Fixed Deposit</option>
+      </select>
+
+      <label for="initialdeposit">Initial Deposit (₹)</label>
+      <input type="number" name="initialdeposit" step="0.01" required>
+
+      <input type="submit" value="Create Account">
+      <p class="note">Your information is securely processed.</p>
+    </form>
+  </div>
+</body>
+</html>
